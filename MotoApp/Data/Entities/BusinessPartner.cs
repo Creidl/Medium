@@ -1,6 +1,6 @@
-﻿namespace MotoApp.Entities
+﻿namespace MotoApp.Data.Entities
 {
-    public class BusinessPartner: EntityBase
+    public class BusinessPartner : EntityBase
     {
         public string? Name { get; set; }
 

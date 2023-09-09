@@ -1,9 +1,9 @@
-﻿using MotoApp.Entities;
+﻿using MotoApp.Data.Entities;
 
-namespace MotoApp.Repositories
+namespace MotoApp.Data.Repositories
 {
-    public class ListRepository <T> :IRepository<T>
-        where T : class, IEntitiy
+    public class ListRepository<T> : IRepository<T>
+        where T : class, IEntity
     {
         protected readonly List<T> _items = new();
 
@@ -26,9 +26,9 @@ namespace MotoApp.Repositories
         }
 
         public T GetById(int id)
-        { 
+        {
             return _items.Single(item => item.Id == id);
-        } 
+        }
 
         public void Save() //docelowo ma zapisytwać dane w data storage
         {
