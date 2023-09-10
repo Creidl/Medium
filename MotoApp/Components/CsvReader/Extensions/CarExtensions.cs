@@ -15,7 +15,7 @@ public static class CarExtensions
                 Year = int.Parse(colums[0]),
                 Manufakturer = colums[1],
                 Name = colums[2],
-                Displacement = double.Parse(colums[3]),
+                Displacement = double.Parse(colums[3], CultureInfo.InvariantCulture),
                 Cylinders = int.Parse(colums[4]),
                 City = int.Parse(colums[5]),
                 Highway = int.Parse(colums[6]),

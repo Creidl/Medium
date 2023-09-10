@@ -43,5 +43,5 @@ public interface ICarsProvider
     List<Car> DistinctByColors();
 
     //Chunk:
-    List<Car[]> ChunkCars();
+    List<Car[]> ChunkCars(int sieze);
 }

@@ -1,5 +1,6 @@
 ﻿using MotoApp.Components.CsvReader.Extensions;
 using MotoApp.Components.CsvReader.Models;
+using System.Globalization;
 
 namespace MotoApp.Components.CsvReader;
 
@@ -14,7 +15,7 @@ public class CsvReader : ICsvReader
         return File.ReadAllLines(filePath)
             .Skip(1)
             .Where(x => x.Length > 1)
-            .ToCar()
+            .ToCar()            
             .ToList();
     }
 
